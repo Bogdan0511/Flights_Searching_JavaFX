@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examen_practic.LoginController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="tf" layoutX="226.0" layoutY="99.0" promptText="..." />
+            <Label alignment="CENTER" layoutX="226.0" layoutY="58.0" prefHeight="18.0" prefWidth="147.0" text="Nume utilizator:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="227.0" layoutY="175.0" onAction="#logheaza" mnemonicParsing="false" prefHeight="46.0" prefWidth="148.0" text="Conectare" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

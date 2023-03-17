@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examen_practic.ZboruriController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="123.0" layoutY="31.0" prefHeight="18.0" prefWidth="341.0" text="V-ati conectat!">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <TableView fx:id="zboruri" layoutX="34.0" layoutY="78.0" prefHeight="200.0" prefWidth="535.0">
+              <columns>
+                <TableColumn fx:id="from" prefWidth="98.39996337890625" text="plecare" />
+                <TableColumn fx:id="to" prefWidth="97.60003662109375" text="destinatie" />
+                  <TableColumn fx:id="departureTime" prefWidth="112.800048828125" text="decolare" />
+                  <TableColumn fx:id="landingTime" prefWidth="115.20001220703125" text="aterizare" />
+                  <TableColumn fx:id="seats" prefWidth="112.00006103515625" text="locuri" />
+              </columns>
+            </TableView>
+            <ComboBox fx:id="combo1" layoutX="48.0" layoutY="291.0" prefWidth="150.0" />
+            <ComboBox fx:id="combo2" layoutX="409.0" layoutY="291.0" onAction="#initmodelFiltrate" prefWidth="150.0" />
+            <DatePicker fx:id="datap" layoutX="215.0" layoutY="332.0" onAction="#initmodelFiltrateOra" />
+            <Label layoutX="47.0" layoutY="324.0" prefHeight="18.0" prefWidth="149.0" text="de la..." />
+            <Label alignment="CENTER_RIGHT" layoutX="409.0" layoutY="324.0" prefHeight="18.0" prefWidth="149.0" text="pana la..." />
+            <Label alignment="CENTER" layoutX="215.0" layoutY="369.0" prefHeight="18.0" prefWidth="173.0" text="plecare in data de..." />
+            <Label layoutX="462.0" layoutY="23.0" prefHeight="18.0" prefWidth="107.0" text="Bine ai venit!" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
